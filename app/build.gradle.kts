@@ -2,6 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+/*repositories {
+    google()
+    mavenCentral()
+}*/
 android {
     namespace = "org.sismo.infogram"
     compileSdk = 36
@@ -32,7 +36,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

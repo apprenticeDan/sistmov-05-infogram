@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">infogram</string>
+    <string name="app_name" translatable="false">infogram</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="nom_de_usr">Nombre de Usuario</string>
+    <string name="contrase">Contraseña</string>
+    <string name="button_text">login</string>
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutCustom" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!--<item name="boxBackgroundMode">none</item>  Solo línea inferior -->
+        <item name="boxBackgroundColor">?attr/colorPrimary</item>
+        <item name="boxStrokeColor">@color/white</item> <!-- Color cuando enfocado -->
+        <item name="hintTextColor">@color/white</item> <!-- Hint sin focus -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="EditTextCustom">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

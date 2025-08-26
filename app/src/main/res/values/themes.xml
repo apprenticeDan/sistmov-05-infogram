@@ -2,8 +2,10 @@
     <!-- Base application theme. -->
     <style name="Theme.Infogram" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/blue_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorAccent">@color/micolor</item>
+        <item name="colorPrimaryDark">@color/micolor2</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -11,6 +13,19 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">false</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="editTextWhite" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textSize">@dimen/editText_textSize</item>
+        <item name="android:textColorHint">@color/editText_TextColorHint</item>
+        <item name="android:textColorPrimary">@color/editText_TextColorPrimary</item>
+        <item name="hintTextColor">@color/editText_colorControlNormal</item>
+        <item name="boxStrokeColor">@color/editText_colorControlActivated</item>
+    </style>
+    <style name="raiseButtonDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorButtonNormal">?attr/colorPrimaryDark</item>
+        <item name="colorControlHighlight">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/button_textColor</item>
     </style>
 </resources>

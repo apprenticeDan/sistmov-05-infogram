@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editText_textSize">20sp</dimen>
+    <dimen name="login_horizontal_lmargin">40dp</dimen>
+    <dimen name="login_horizontal_rmargin">40dp</dimen>
+    <dimen name="login_margintop">20dp</dimen>
+</resources>
