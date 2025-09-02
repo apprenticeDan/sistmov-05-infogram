@@ -11,9 +11,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="micolor">#FF4081</color>
     <color name="micolor2">#2196F3</color>
+    <color name="editText_white">#FFFFFF</color>
+    <color name="editText_black">#000000</color>
     <color name="editText_TextColorHint">#FFFFFF</color>
     <color name="editText_TextColorPrimary">#FFFFFF</color>
     <color name="editText_colorControlNormal">#FFFFFF</color>
     <color name="editText_colorControlActivated">#FFFFFF</color>
-<color name="button_textColor">#FFFFFF</color>
+    <color name="button_textColor">#FFFFFF</color>
+
 </resources>

@@ -4,4 +4,12 @@
     <string name="nom_de_usr">Nombre de Usuario</string>
     <string name="contrase">Contraseña</string>
     <string name="button_text">login</string>
+    <string name="tienes_cuenta">"¿No ienes cuenta? "</string>
+    <string name="crea_cuenta">Crea una aquí.</string>
+    <string name="email_usr">Correo</string>
+    <string name="nombre">Nombre</string>
+    <string name="confirm_contrase">Confirme contraseña</string>
+    <string name="create_acc_button">ÚNETE</string>
+    <string name="crear_cuenta_msg">Crear cuenta</string>
+
 </resources>

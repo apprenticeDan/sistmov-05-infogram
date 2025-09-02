@@ -23,9 +23,5 @@
         <item name="hintTextColor">@color/editText_colorControlNormal</item>
         <item name="boxStrokeColor">@color/editText_colorControlActivated</item>
     </style>
-    <style name="raiseButtonDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorButtonNormal">?attr/colorPrimaryDark</item>
-        <item name="colorControlHighlight">?attr/colorPrimary</item>
-        <item name="android:textColor">@color/button_textColor</item>
-    </style>
+
 </resources>

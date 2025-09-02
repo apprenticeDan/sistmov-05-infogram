@@ -1,82 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".LoginActivity"
-    android:background="@color/blue_500">
-
+    android:background="#10273A"
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/blue_500"
         android:weightSum="1">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?attr/colorPrimary"
-            android:layout_weight="0.65">
+            android:layout_weight="0.65"
+            android:background="?attr/colorPrimary">
+
             <ImageView
-                android:layout_margin="40dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/infogram">
             </ImageView>
         </RelativeLayout>
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?attr/colorPrimary"
-            android:orientation="vertical"
-            android:layout_marginStart="@dimen/login_horizontal_lmargin"
-            android:layout_marginEnd="@dimen/login_horizontal_rmargin"
-            android:layout_weight="0.35">
-            <com.google.android.material.textfield.TextInputLayout
+            android:fillViewport="true"
+            android:layout_weight="0.40">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/TextInputLayoutCustom">
-                <!--android:theme="@style/editTextWhite">-->
-                <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutCustom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/nom_de_usr"
-                    style="@style/EditTextCustom">
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_marginStart="@dimen/login_horizontal_lmargin"
+                    android:layout_marginEnd="@dimen/login_horizontal_rmargin">
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/EditTextCustom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nom_de_usr"
+                        android:inputType="text">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/login_margintop"
-                style="@style/TextInputLayoutCustom"
-                >
-            <!--android:theme="@style/editTextWhite">-->
-
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutCustom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:hint="@string/contrase"
-                    style="@style/EditTextCustom">
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/button_text"
-    android:layout_marginTop="@dimen/login_margintop"
-    android:theme="@style/raiseButtonDark"
-    >
+                    android:layout_marginTop="@dimen/login_margintop"
+                    android:layout_marginStart="@dimen/login_horizontal_lmargin"
+                    android:layout_marginEnd="@dimen/login_horizontal_rmargin">
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/EditTextCustom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/contrase"
+                        android:inputType="textPassword">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
 
-</Button>
-        </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_margintop"
+                    android:text="@string/button_text"
+                    android:theme="@style/raiseButtonDark"
+                    android:layout_marginStart="@dimen/login_horizontal_lmargin"
+                    android:layout_marginEnd="@dimen/login_horizontal_rmargin">
+                </Button>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tienes_cuenta"
+                        style="@style/ViewTextCuenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/tienes_cuenta">
+                    </TextView>
+                    <TextView
+                        style="@style/ViewTextCuenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crea_cuenta"
+                        android:textStyle="bold"
+
+                        android:onClick="goCreateAccount">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

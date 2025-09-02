@@ -4,4 +4,9 @@
     <dimen name="login_horizontal_lmargin">40dp</dimen>
     <dimen name="login_horizontal_rmargin">40dp</dimen>
     <dimen name="login_margintop">20dp</dimen>
+    <dimen name="create_acc_margintop">30dp</dimen>
+    <dimen name="padding_create_acc">40dp</dimen>
+    <dimen name="height_cardview">250dp</dimen>
+    <dimen name="corner_radius_cardview">20dp</dimen>
+    <dimen name="margin_cardview">10dp</dimen>
 </resources>

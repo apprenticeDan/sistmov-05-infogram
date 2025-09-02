@@ -13,4 +13,25 @@
         <item name="android:textColorHint">@color/white</item>
         <item name="android:textSize">20sp</item>
     </style>
+    <style name="raiseButtonDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorButtonNormal">?attr/colorPrimaryDark</item>
+        <item name="colorControlHighlight">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/button_textColor</item>
+    </style>
+    <style name="ViewTextCuenta">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="EditTextCuentaBlack" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/editText_textSize</item>
+        <item name="android:textColorHint">@color/editText_black</item>
+        <item name="android:textColorPrimary">@color/editText_black</item>
+        <item name="colorControlNormal">@color/editText_black</item>
+        <item name="colorControlActivated">@color/editText_black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
 </resources>

@@ -1,32 +1,34 @@
 package org.sismo.infogram;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LoginActivity extends AppCompatActivity {
+public class CreateAccountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_create_account);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        showToolbar(getString(R.string.crear_cuenta_msg), true);
     }
 
-    public void goCreateAccount(View view){
-        System.out.println("--------------\ngo to create Account\n--------------");
-        Intent intent = new Intent(this, CreateAccountActivity.class);
-        startActivity(intent);
+    public void showToolbar(String titulo, boolean botonSubir) {
+        Toolbar toolbar = findViewById(R.id.toolbar); //vincula clase con el toolbar definido en xml
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(titulo);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir); // ver anotacion
     }
 }
