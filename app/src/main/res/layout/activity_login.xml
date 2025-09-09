@@ -79,7 +79,8 @@
                     android:text="@string/button_text"
                     android:theme="@style/raiseButtonDark"
                     android:layout_marginStart="@dimen/login_horizontal_lmargin"
-                    android:layout_marginEnd="@dimen/login_horizontal_rmargin">
+                    android:layout_marginEnd="@dimen/login_horizontal_rmargin"
+                    android:onClick="logincall">
                 </Button>
 
                 <LinearLayout
@@ -101,7 +102,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/crea_cuenta"
                         android:textStyle="bold"
-
                         android:onClick="goCreateAccount">
                     </TextView>
                 </LinearLayout>

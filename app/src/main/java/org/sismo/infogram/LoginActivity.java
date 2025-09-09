@@ -2,6 +2,7 @@ package org.sismo.infogram;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -9,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.sismo.infogram.view.ContainerActivity;
+import org.sismo.infogram.view.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,6 +31,12 @@ public class LoginActivity extends AppCompatActivity {
     public void goCreateAccount(View view){
         System.out.println("--------------\ngo to create Account\n--------------");
         Intent intent = new Intent(this, CreateAccountActivity.class);
+        startActivity(intent);
+    }
+
+    public void logincall(View view) {
+        Log.d("LoginActivity", "Login button clicked");
+        Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
 }

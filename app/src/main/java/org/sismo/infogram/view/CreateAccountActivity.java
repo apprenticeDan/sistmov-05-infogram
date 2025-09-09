@@ -1,6 +1,5 @@
-package org.sismo.infogram;
+package org.sismo.infogram.view;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,6 +8,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.sismo.infogram.R;
 
 public class CreateAccountActivity extends AppCompatActivity {
 

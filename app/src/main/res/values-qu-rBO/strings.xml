@@ -11,4 +11,10 @@
     <string name="create_acc_button">Crear Cuenta</string>
     <string name="confirm_contrase">Confirme contraseña</string>
     <string name="crear_cuenta_msg">Crear cuenta</string>
+    <string name="usr_carlos_cardview">Carlos Vargas</string>
+    <string name="hace_cardV">Hace</string>
+    <string name="hace_dias_cardV">hace_dias_cardV</string>
+    <string name="bottom_buscar_item">buscar</string>
+    <string name="home">Home</string>
+    <string name="yo_item">Yo</string>
 </resources>

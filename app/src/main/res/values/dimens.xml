@@ -9,4 +9,6 @@
     <dimen name="height_cardview">250dp</dimen>
     <dimen name="corner_radius_cardview">20dp</dimen>
     <dimen name="margin_cardview">10dp</dimen>
+    <dimen name="paddingBottom_container">150dp</dimen>
+    <dimen name="height_bottom_nav_view">80dp</dimen>
 </resources>
