@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottom_nav_view"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/height_bottom_nav_view"
+    android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_gravity="bottom|end"
     app:menu="@menu/bottom_nav_menu"
     android:background="?attr/colorPrimary"
     app:itemIconTint="@color/white"
-    app:itemTextColor="@color/white">
+    app:itemTextColor="@color/white"
+    app:itemIconSize="32dp"
+    app:labelVisibilityMode="labeled">
 
 </com.google.android.material.bottomnavigation.BottomNavigationView>

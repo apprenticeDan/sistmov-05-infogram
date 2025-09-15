@@ -1,4 +1,4 @@
-package org.sismo.infogram.view;
+package org.sismo.infogram.views;
 
 import android.os.Bundle;
 

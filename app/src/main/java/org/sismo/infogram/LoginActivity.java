@@ -11,8 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import org.sismo.infogram.view.ContainerActivity;
-import org.sismo.infogram.view.CreateAccountActivity;
+import org.sismo.infogram.views.ContainerActivity;
+import org.sismo.infogram.views.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
