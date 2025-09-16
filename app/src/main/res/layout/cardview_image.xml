@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/image_cv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/en_lp"
@@ -26,6 +27,7 @@
             android:padding="15dp"
             android:background="@color/background_cardview">
             <TextView
+                android:id="@+id/usrName_cv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -45,6 +47,7 @@
                     android:textColor="@color/white">
                 </TextView>
                 <TextView
+                    android:id="@+id/dias_cv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hace_dias_cardV"
@@ -66,6 +69,7 @@
 
                 </CheckBox>
                 <TextView
+                    android:id="@+id/likes_cv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10 me gusta"
