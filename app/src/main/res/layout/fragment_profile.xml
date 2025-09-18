@@ -1,14 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        style="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/design_default_color_primary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/paddintop_linay_profile"
+                android:paddingBottom="@dimen/paddinbott_linay_profile"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="@dimen/padding_card"
+                android:layout_marginRight="@dimen/padding_card"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/usrname_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usr_carlos_cardview"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textView_username_profile">
+                </TextView>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/design_default_color_primary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:paddingTop="@dimen/padding_card"
+        android:paddingHorizontal="@dimen/padding_card">
+    </androidx.recyclerview.widget.RecyclerView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_view"
+        android:layout_width="@dimen/size_circle_profile"
+        android:layout_height="@dimen/size_circle_profile"
+        android:src="@drawable/profile_pic"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="@dimen/margTop_circle_profile"
+        android:elevation="@dimen/elevation_circle_profile"
+        app:layout_behavior=".views.CircleImageBehavior">
 
-</FrameLayout>
+    <!--dependsOn="@id/appbar_profile"
+    dependType="y"
+    dependTargetY="@dimen/dependYTarget_circ_profile"
+    targetX="@dimen/target_circl_im_prof"
+    targetY="@dimen/target_circl_im_prof">
+    app:layout_behavior="com.zoonref.SimpleViewBehavior"-->
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

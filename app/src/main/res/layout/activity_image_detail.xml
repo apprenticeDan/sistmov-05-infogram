@@ -5,14 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageDetailActivity">
-    <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".views.ImageDetailActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/appbar_imgdet"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_image_dimen"
         style="@style/AppTheme.AppBarOverlay">
         <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collanpsing_toolbar_imgdet"
+            android:id="@+id/collapsing_toolbar_imgdet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
@@ -25,6 +28,7 @@
                 android:background="@drawable/en_lp"
                 app:layout_collapseMode="parallax">
             </ImageView>
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar_imgdet"
                 android:layout_width="match_parent"
@@ -43,6 +47,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/usrname_imgdet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/textView_username_imgdet"
@@ -66,15 +71,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/editText_megsta"
-                    android:layout_marginLeft="@dimen/margin_megusta_imgdet"
+                    android:layout_marginStart="@dimen/margin_megusta_imgdet"
                     android:text="@string/megusta_imgdet">
                 </TextView>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_divider_imgdet"
-                android:background="@color/cardview_dark_background"
-                ></View>
+                android:background="@color/cardview_dark_background">
+            </View>
             <TextView
                 android:id="@+id/title_imgdet"
                 android:layout_width="wrap_content"
@@ -82,7 +87,7 @@
                 android:textSize="@dimen/textSize_title_imgdet"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                android:text="Todo copas en la wakaplaya"
+                android:text="@string/textTitle_immdet"
                 android:paddingTop="@dimen/paddingTop_title_imgdet">
             </TextView>
             <TextView

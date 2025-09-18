@@ -2,7 +2,6 @@ package org.sismo.infogram.adapters;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,11 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import org.sismo.infogram.ImageDetailActivity;
+import org.sismo.infogram.views.ImageDetailActivity;
 import org.sismo.infogram.R;
 import org.sismo.infogram.models.Image;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardViewHolder> {

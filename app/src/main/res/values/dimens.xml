@@ -16,10 +16,16 @@
     <dimen name="height_image_dimen">300dp</dimen>
     <dimen name="textView_username_imgdet">20sp</dimen>
     <dimen name="marginTop_imdet">20dp</dimen>
-    <dimen name="editText_megsta">14dp</dimen>
+    <dimen name="editText_megsta">14sp</dimen>
     <dimen name="margin_megusta_imgdet">5dp</dimen>
     <dimen name="height_divider_imgdet">2dp</dimen>
     <dimen name="textSize_title_imgdet">16sp</dimen>
     <dimen name="paddingTop_title_imgdet">20dp</dimen>
     <dimen name="fab_imgdet_margin">30dp</dimen>
+    <dimen name="paddintop_linay_profile">200dp</dimen>
+    <dimen name="paddinbott_linay_profile">20dp</dimen>
+    <dimen name="textView_username_profile">36sp</dimen>
+    <dimen name="size_circle_profile">150dp</dimen>
+    <dimen name="margTop_circle_profile">40dp</dimen>
+    <dimen name="elevation_circle_profile">10dp</dimen>
 </resources>

@@ -2,13 +2,18 @@ package org.sismo.infogram.views.fragments;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import org.sismo.infogram.R;
+import org.sismo.infogram.adapters.CardViewAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +66,20 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        Toolbar toolbar = view.findViewById(R.id.toolbar_profile);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
+        if (((AppCompatActivity) requireActivity()).getSupportActionBar()!=null) {
+            ((AppCompatActivity) requireActivity()).getSupportActionBar()
+                    .setTitle(getString(R.string.title_home_fragment));
+        }
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view_profile);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        /*CardViewAdapter cardViewAdapter = new CardViewAdapter(buildProfileImages(),
+                R.layout.cardview_image, getActivity());
+        recyclerView.setAdapter(cardViewAdapter);
+        */
+        return view;
     }
+
 }

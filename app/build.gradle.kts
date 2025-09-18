@@ -44,4 +44,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(libs.picasso)
+    implementation(libs.circlev)
+    //implementation(libs.simplevi)
 }
